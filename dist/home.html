@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/img/logo.png">
+    <title>Home | LeafMail</title>
+    <link href="../assets/css/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="scroll-smooth">
+    <header>
+        <nav
+            class="fixed top-0 flex flex-wrap z-50 items-center justify-between md:justify-around w-full py-4 md:py-3 px-4 text-lg text-gray-700 bg-white">
+
+            <div class="">
+                <img src="../assets/img/icon.png" alt="" class="h-[50px] w-[50px]">
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <div class="hidden w-full md:flex md:items-center md:w-auto md:shadow-none cursor-pointer" id="menubar">
+                <ul class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 text-center">
+                    <li>
+                        <a class="md:p-4 py-2 block hover:underline" href="./team.html">Team</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:underline" href="./pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:underline" href="./who.html">who i'm</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:underline" href="./support.html">Support</a>
+                    </li>
+                    <div class="flex md:hidden items-center md:order-2 justify-center " >
+                        <button type="button" class="flex mr-3 text-sm rounded-full"
+                            id="user-menu-button">
+                            <img class="w-8 h-8 rounded-full bg-contain "
+                                src="../assets/img/poeople.avif"
+                                alt="photo">
+                        </button>
+                </ul>
+            </div>
+            <div class="hidden md:flex items-center md:order-2">
+                <button› type="button" class="flex mr-3 text-sm rounded-full"
+                    >
+                    <img class="w-8 h-8 rounded-full bg-contain" id="profile"
+                        src="../assets/img/poeople.avif" alt="photo">
+                </button›>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex flex-col items-center mt-32 md:justify-center text-center">
+        <h1 class="md:text-6xl text-5xl font-bold">Faster, Powerful & No internet</h1>
+        <p class="md:text-lg text-base py-2 font-normal text-gray-500 px-4 md:w-[50%] text-center ">With focused visual tools
+            and
+            preprocessor support, LeafMail is modern email made easy
+            to send messages to users. It was built from the ground up for productivity and HomeWork.</p>
+        <div class="gap-2 py-8">
+            <button
+                class="md:flex py-3 px-8 md:items-center rounded-lg text-white bg-blue-500  font-semibold text-sm   hover:bg-blue-600 transition duration-300"
+                onclick="goinstall()">Download</button>
+            <h5 class="text-gray-500 text-sm font-normal py-2">Installer by <a href="https://www.phoenix-ai.com/" class="text-blue-500">core.ai</a>
+            </h5>
+            <a href="./404.html" class="md:block hidden underline text-xs font-normal">iOS download</a>
+            <a href="../app/LeafMail.zip" class=" md:hidden  underline text-xs font-normal">MacOS download</a>
+        </div>
+        <div class="pt-2 hidden sm:flex  items-center mx-2">
+            <img src="../assets/img/desktop.png" alt="" class=" md:w-[1059px]">
+        </div>
+        <div class="pt-2 sm:hidden">
+            <img src="../assets/img/handphone.jpeg" alt="" class=" h-auto px-5  w-auto">
+        </div>
+    </main>
+
+    <div class="bg-blue-50">
+
+        <div class="flex-col flex  md:flex md:flex-row pl-8 md:justify-center gap-4 md:py-32 py-2">
+            <div class="flex flex-col md:items-center md:text-center">
+                <h1 class="text-2xl font-semibold">Why Use Me? </h1>
+                <p class="text-base font-light text-gray-500 w-[80%]"> More than 2 billion people in over 180 countries
+                    use
+                    LeafMail to stay in touch with friends and family, anytime and anywhere.</p>
+            </div>
+            <div class="flex flex-col md:items-center md:text-center ">
+                <h1 class="text-2xl font-semibold text-black">Messages, Shared<i
+                        class="fa-sharp fa-solid fa-paper-plane fa-xs" style="color: #1AC0FA;"
+                        onmousemove="changeblue()" id="mail"></i> and Email.</h1>
+                <p class="text-base font-light text-gray-500 w-[80%]">LeafMail is an open-source share, supported by
+                    an
+                    active and passionate community. It's made by other web developers like you! <a href="#"
+                        class="text-blue-500">Learn How to Contribute…</a>
+                </p>
+            </div>
+        </div>
+
+        <h1 class="text-2xl font-semibold flex items-center justify-center">Features</h1>
+
+        <div class="justify-center flex-wrap  flex md:flex items-center my-6 gap-8 md:gap-8 pb-20">
+            <div
+                class="w-[318px] h-[260px] ring-1 bg-white ring-gray-400 rounded-md flex flex-col items-center gap-2 justify-center hover:shadow-2xl transition  hover:scale-110  duration-500">
+                <div class="w-12 h-12 rounded-full flex bg-[#ffeae9] items-center justify-center">1</div>
+                <h1 class="font-semibold">Sharing Like AirDrop</h1>
+                <p class="text-center font-light text-gray-400 text-xs px-3">Get your closest connection to make fast
+                    delivery.
+                    you will direct
+                    see very fast delivery</p>
+
+            </div>
+
+            <div
+                class="w-[318px] h-[260px] ring-1 bg-white ring-gray-400 rounded-md flex flex-col items-center gap-2 justify-center hover:shadow-2xl transition  hover:scale-110  duration-300">
+                <div class="w-12 h-12 rounded-full flex bg-[#eefaf6] items-center justify-center">2</div>
+                <h1 class="font-semibold">Preprocessor Support
+                </h1>
+                <p class="text-center font-light text-gray-400 text-xs px-3">Work with preprocessors in a whole new way.
+                    We
+                    know how important preprocessors are to your workflow.</p>
+
+            </div>
+
+            <div
+                class="w-[318px] h-[260px] ring-1 bg-white ring-gray-400 rounded-md flex flex-col items-center gap-2 justify-center hover:shadow-2xl transition  hover:scale-110  duration-300">
+                <div class="w-12 h-12 rounded-full flex bg-[#fff1e4] items-center justify-center">3</div>
+                <h1 class="font-semibold">Messages</h1>
+                <p class="text-center font-light text-gray-400 text-xs px-3">Simple, reliable, private messaging and
+                    calling
+                    for free*, available all over the world.</p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <main class="flex justify-around py-20">
+        <div class="flex-row">
+            <span class="text-2xl font-medium px-4">Popular Extensions</span>
+            <div class="px-6">
+                <div class="py-4">
+                    <h1 class="text-blue-500 text-base font-normal cursor-pointer" onclick="gotrack()">Email Tracker</h1>
+                    <p class="text-sm font-light text-gray-400">the following information
+                        regarding the collection</p>
+                </div>
+                <div class="py-4">
+                    <h1 class="text-blue-500 text-base font-normal cursor-pointer">Temp Mail</h1>
+                    <p class="text-sm font-light text-gray-400"> Protect your email from spam, bots and phishing</p>
+                </div>
+                <div class="py-4">
+                    <h1 class="text-blue-500 text-base font-normal cursor-pointer">GMass</h1>
+                    <p class="text-sm font-light text-gray-400">A powerful mass email and mail merge system for mail.
+                    </p>
+                </div>
+                <div class="py-4">
+                    <h1 class="text-blue-500 text-base font-normal cursor-pointer">Promethean</h1>
+                    <p class="text-sm font-light text-gray-400">Put sharing collaboration into the hands of friends and
+                        family.</p>
+                </div>
+            </div>
+        </div>
+        <div class="hidden md:flex" data-aos="zoom-out-left">
+            <img src="../assets/img/undraw_search_app_oso2.svg" alt="" class="w-[400px] h-auto">
+        </div>
+    </main>
+
+
+
+<footer class=" bg-blue-500 text-white">
+    <div class="max-w-2xl mx-auto text-white py-10">
+        <div class="text-center">
+            <h3 class="text-3xl mb-3"> Download LeafMail On you device </h3>
+            <p> Sharing , Mail and Messaging. </p>
+            <div class="flex flex-wrap gap-3 justify-center my-10">
+                <div class="flex items-center border w-auto rounded-lg px-4 py-2 md:w-44 mx-2 cursor-pointer" onclick="goinstall()">
+                    <img src="https://cdn.jim-nielsen.com/macos/1024/finder-2021-09-10.png" class="w-7 md:w-8">
+                    <div class="text-left ml-3">
+                        <p class='text-xs text-gray-200'>Download for </p>
+                        <p class="text-sm md:text-base"> MacOS </p>
+                    </div>
+                </div>
+                <div class="flex items-center border w-auto rounded-lg px-4 py-2 md:w-44 mx-2 cursor-pointer">
+                    <img src="https://developer.apple.com/assets/elements/icons/ios-16-num/ios-16-num-96x96_2x.png" class="w-7 md:w-8">
+                    <div class="text-left ml-3">
+                        <p class='text-xs text-gray-200'>Download for </p>
+                        <p class="text-sm md:text-base"> iOS </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-10 flex flex-col md:flex-row md:justify-between items-center text-sm ">
+            <p class="order-2 md:order-1 mt-8 md:mt-0"> &copy; Devloper leafmail </p>
+            <div class="order-1 md:order-2">
+                <a href="../dist/who.html" class="px-2 cursor-pointer">About us</a>
+                <a href="https://discord.com/login?redirect_to=%2Flogin%3Fredirect_to%3D%252Fchannels%252F%2540me" class="px-2 border-l cursor-pointer">Disqord</a>
+                <a href="https://github.com/Kingostyl" class="px-2 border-l cursor-pointer">Github</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+
+
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

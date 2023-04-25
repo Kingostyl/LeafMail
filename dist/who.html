@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/logo.png">
+    <title>Who i'am | LeafMail</title>
+    <link href="../assets/css/output.css" rel="stylesheet" />
+    <style>
+        @media screen and (max-width: 1000px) {
+            .star {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav
+            class="fixed top-0 flex flex-wrap z-50 items-center justify-between md:justify-around w-full py-4 md:py-3 px-4 text-lg text-gray-700 bg-white">
+
+            <div class="">
+                <img src="../assets/img/icon.png" alt="" class="h-[50px] w-[50px] cursor-pointer" onclick="goback2()">
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+
+            <div class="hidden w-full md:flex md:items-center md:w-auto md:shadow-none cursor-pointer" id="menubar">
+                <ul class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 text-center">
+                    <li>
+                        <a class="md:p-4 py-2 block hover:underline" href="./team.html">Team</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:underline" href="./pricing.html">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:underline" href="./who.html">who i'm</a>
+                    </li>
+                    <li>
+                        <a class="md:p-4 py-2 block hover:underline" href="./support.html">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mt-32">
+        <div class="md:px-72 px-2 flex flex-col gap-8">
+            <h1 class="text-5xl font-medium text-center">We believe a better world starts with privacy and digital
+                freedom</h1>
+            <p class="text-xl font-light text-center">LeafMail was born in Switzerland in 2014 when a team of scientists
+                who met at CERN (the European Organization for Nuclear Research) decided to build a better internet
+                where privacy is the default.</p>
+        </div>
+    </div>
+
+    <div class="py-32">
+        <div class="star flex  gap-14  items-center">
+            <img src="https://images.prismic.io/proton-me/24604807-21c0-4931-b2a3-89a5d0b1adb6_cern-proton.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&max-width=960&w=1536&h=1493"
+                alt="" class=" w-[400px] md:w-[587px] md:h-[570px] h-auto ">
+            <span class="flex flex-col gap-5">
+                <h3 class="font-medium  text-center lg:text-start text-3xl">It started with the World Wide Web</h3>
+                <p class="font-light text-base lg:w-[60%] text-center lg:text-start">Ever since it was created at CERN
+                    in
+                    1991, the World Wide Web has revolutionized our lives. However, for many of us, the only way to
+                    benefit from the internet today is to hand over vast amounts of personal data to companies that
+                    prioritize profits over privacy. In many parts of the world, governments abuse this data to limit
+                    the freedom of their citizens.</p>
+            </span>
+        </div>
+        <div class="star flex flex-row-reverse  gap-14  items-center mt-8">
+            <img src="https://images.prismic.io/proton-me/02c3637f-5d79-4cc5-9407-be411d42eda3_proton-privacy-alternative.png?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&max-width=960&w=1536&h=1491"
+                alt="" class=" w-[400px] md:w-[587px] md:h-[570px] h-auto ">
+            <span class="flex  flex-col gap-5 md:ml-20">
+                <h3 class="font-medium  text-center lg:text-start text-3xl">It started with the World Wide Web</h3>
+                <p class="font-light text-base lg:w-[60%] text-center lg:text-start">Ever since it was created at CERN
+                    in
+                    1991, the World Wide Web has revolutionized our lives. However, for many of us, the only way to
+                    benefit from the internet today is to hand over vast amounts of personal data to companies that
+                    prioritize profits over privacy. In many parts of the world, governments abuse this data to limit
+                    the freedom of their citizens.</p>
+            </span>
+        </div>
+    </div>
+
+    <div class="py-32">
+        <div class="flex flex-col justify-center gap-9 items-center">
+            <h1 class="font-normal text-5xl text-center">Internet for the people, by the people</h1>
+            <div class="w-11 h-2 bg-blue-600 rounded-xl "></div>
+        </div>
+        <div class="flex justify-center my-14">
+            <img src="https://prismic-io.s3.amazonaws.com/proton-me/7c178e15-4cb0-45df-82e5-36b445323a2b_proton-protects-privacy.png"
+                alt="" class="width-[100%] h-auto md:w-[1093px] md:h-[278px]">
+        </div>
+    </div>
+
+    <div class="bg-[rgb(252,252,254)] py-32">
+        <div class="flex flex-col items-center justify-center gap-5">
+            <h1 class="text-5xl font-medium text-center">Colaburation With Icloud</h1>
+            <video  style="width: 100%; height: 379px;" loop muted autoplay id="vid">
+                <source src="../assets/movie/cloud.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+
+              <button class="bg-black text-white px-5 py-3 rounded-3xl font-semibold" onclick="goapple()">Sign in to your icloud</button>
+        </div>
+    </div>
+
+    <footer class=" bg-blue-500 text-white">
+        <div class="max-w-2xl mx-auto text-white py-10">
+            <div class="text-center">
+                <h3 class="text-3xl mb-3"> Download LeafMail On you device </h3>
+                <p> Sharing , Mail and Messaging. </p>
+                <div class="flex flex-wrap gap-3 justify-center my-10">
+                    <div class="flex items-center border w-auto rounded-lg px-4 py-2 md:w-44 mx-2 cursor-pointer" onclick="goinstall()">
+                        <img src="https://cdn.jim-nielsen.com/macos/1024/finder-2021-09-10.png" class="w-7 md:w-8">
+                        <div class="text-left ml-3">
+                            <p class='text-xs text-gray-200'>Download for </p>
+                            <p class="text-sm md:text-base"> MacOS </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center border w-auto rounded-lg px-4 py-2 md:w-44 mx-2 cursor-pointer">
+                        <img src="https://developer.apple.com/assets/elements/icons/ios-16-num/ios-16-num-96x96_2x.png" class="w-7 md:w-8">
+                        <div class="text-left ml-3">
+                            <p class='text-xs text-gray-200'>Download for </p>
+                            <p class="text-sm md:text-base"> iOS </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10 flex flex-col md:flex-row md:justify-between items-center text-sm ">
+                <p class="order-2 md:order-1 mt-8 md:mt-0"> &copy; Devloper leafmail </p>
+                <div class="order-1 md:order-2">
+                    <a href="../dist/who.html" class="px-2 cursor-pointer">About us</a>
+                    <a href="https://discord.com/login?redirect_to=%2Flogin%3Fredirect_to%3D%252Fchannels%252F%2540me" class="px-2 border-l cursor-pointer">Disqord</a>
+                    <a href="https://github.com/Kingostyl" class="px-2 border-l cursor-pointer">Github</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
