@@ -22,7 +22,7 @@
             <div class="">
                 <img src="../assets/img/icon.png" alt="" class="h-[50px] w-[50px]">
             </div>
-            <div class="flex items-center">
+            <div class="md:hidden flex items-center gap-1">
             <div class="flex md:hidden items-center md:order-2 py-5 justify-center " >
                 <button type="button" class="flex mr-3 text-sm rounded-full focus:ring focus:ring-blue-400"
                     id="user-menu-button">
@@ -40,32 +40,32 @@
             </div>
 
             <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
-                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </div>
+            fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+    </div>
+    
+                <div class="hidden w-full md:flex md:items-center md:w-auto md:shadow-none" id="menubar">
+                    <ul class="pt-4 text-base text-gray-700 md:flex  md:pt-0 text-center">
+                        <li>
+                            <a class="md:p-4 py-2 block hover:underline cursor-pointer" href="./team.html">Team</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:underline cursor-pointer" href="./pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:underline cursor-pointer" href="./who.html">who i'm</a>
+                        </li>
+                        <li>
+                            <a class="md:p-4 py-2 block hover:underline cursor-pointer" href="./support.html">Support</a>
+                        </li>
+                    </ul>
+                </div>
         
-
-            <div class="hidden w-full md:flex md:items-center md:w-auto md:shadow-none" id="menubar">
-                <ul class="pt-4 text-base text-gray-700 md:flex  md:pt-0 text-center">
-                    <li>
-                        <a class="md:p-4 py-2 block hover:underline cursor-pointer" href="./team.html">Team</a>
-                    </li>
-                    <li>
-                        <a class="md:p-4 py-2 block hover:underline cursor-pointer" href="./pricing.html">Pricing</a>
-                    </li>
-                    <li>
-                        <a class="md:p-4 py-2 block hover:underline cursor-pointer" href="./who.html">who i'm</a>
-                    </li>
-                    <li>
-                        <a class="md:p-4 py-2 block hover:underline cursor-pointer" href="./support.html">Support</a>
-                    </li>
-                </ul>
-            </div>
 
 
             <div class="hidden md:flex items-center md:order-2">
-                <button type="button" class="flex mr-3 text-sm rounded-full cursor-pointer focus:ring focus:ring-blue-400"
+                <button type="button" class="flex mr-3  text-sm rounded-full cursor-pointer focus:ring focus:ring-blue-400"
                     >
                     <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start" class="w-8 h-8 rounded-full bg-contain" id="profile"
                         src="../assets/img/poeople.avif" alt="photo">

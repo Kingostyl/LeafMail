@@ -845,6 +845,15 @@ video {
   width: 11rem;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -923,6 +932,14 @@ video {
 
 .gap-9 {
   gap: 2.25rem;
+}
+
+.gap-10 {
+  gap: 2.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
