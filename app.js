@@ -22,7 +22,7 @@ function gomockup() {
 }
 
 function goinstall() {
-  window.location.href = "../app/LeafMail.zip";
+  window.location.href = "../app/LeafMail.dmg";
 }
 
 document.getElementById("icloud").play();
