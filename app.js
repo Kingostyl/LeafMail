@@ -25,7 +25,8 @@ function goinstall() {
   window.location.href = "../app/LeafMail.zip";
 }
 
-document.getElementById("vid").play();
+document.getElementById("icloud").play();
+
 document.getElementById("error").play();
 
 function goapple() {
