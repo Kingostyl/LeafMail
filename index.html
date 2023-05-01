@@ -10,19 +10,47 @@
     <link rel="stylesheet" href="../assets/css/output.css">
 </head>
 
-<body class="bg-center bg-no-repeat bg-[url('https://images.unsplash.com/photo-1422493757035-1e5e03968f95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2816&q=80')] bg-gray-700 bg-blend-multiply">
-    <div class="px-4 mx-auto max-w-screen-xl text-center md:py-24 py-52 lg:py-56">
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Smart. Focused. Email.</h1>
-        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Fast, cross-platform email designed to filter out the noise - so you can focus on what's important.</p>
-        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-            <a href="./login.html" class="inline-flex justify-center items-center py-3 px-7 text-base font-medium text-center text-white rounded-lg bg-[#582b8f] hover:bg-[#3c136e] focus:ring-4 focus:ring-purple-900">
-                Login
-            </a>
-            <a href="./register.html" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100">
-                Sign Up
-            </a>  
+<body class="flex overflow-hidden">
+    <div class="min-h-screen flex items-center justify-center">
+        <div class=" w-full max-w-lg">
+          <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div class="absolute -bottom-8 left-20 w-72 h-72 bg-orange-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
         </div>
-    </div> 
+      </div>
+    <main class="absolute md:mt-[10vh] mt-[10vh]">
+        <div class="w-screen h-[500px]  px-10  flex justify-between gap-2 flex-col md:flex-row">
+            <div class="w-full md:3/5 h-[600px] order-2 md:order-1 justify-center flex flex-col">
+                <div class="flex items-center gap-2">
+                    <p class="text-2xl font-bold">LeafMail</p>
+                    <img src="./assets/img/logo.png" alt="" class="w-5 h-5">
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold my-3">Smart. Focused. Email.</h2>
+                <p class="text-xl font-light w-full md:w-[50%]">Fast, cross-platform email designed to filter out the
+                    noise - so you can focus on what's important.</p>
+                <div class="sm:flex gap-3 flex-col sm:flex-row py-4 items-center">
+                    <button
+                        class="py-3 sm:w-32 w-[100%] rounded-lg text-white bg-purple-500 mt-3 font-semibold text-sm  hover:bg-purple-800 transition duration-300">
+                        Login</button>
+                    <div>
+                        <button
+                            class="py-3 sm:w-24 w-[100%] rounded-lg ring-2 text-black ring-gray-200 bg-white mt-3 font-semibold text-sm hover:bg-gray-200  transition duration-300">
+                            Sign up</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class=" order-1 md:order-2 flex items-center justify-center">
+                <img src="./assets/img/banner.png" alt="" class="">
+            </div>
+        </div>
+        
+    </main>
+
+
+
+
+      
+    <script src="app.js"></script>
 </body>
 
 </html>
