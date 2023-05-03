@@ -10,46 +10,51 @@
     <link rel="stylesheet" href="../assets/css/output.css">
 </head>
 
-<body class="flex overflow-hidden">
-    <div class=" min-h-screen flex items-center justify-center">
+<body class="flex overflow-hidden overflow-x-hidden bg-black/40 text-white">
+    <div class="flex items-center justify-center">
         <div class=" w-full max-w-lg">
-          <div class="absolute top-0 -left-4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-          <div class="absolute -bottom-8 left-20 w-72 h-72 bg-orange-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+            <div
+                class="md:absolute top-20 -right-4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob">
+            </div>
+            <div
+                class="md:absolute bottom-8 left-20 w-72 h-72 bg-orange-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000">
+            </div>
         </div>
-      </div>
-    <main class="absolute md:mt-[10vh] mt-[10vh]">
-        <div class="w-screen h-[500px]  px-10  flex justify-between gap-2 flex-col md:flex-row">
+    </div>
+    <main class="absolute md:mt-[10vh]  md:left-0 mt-[10vh]">
+        <div class="w-screen h-[500px]  px-5 md:px-10  flex justify-center md:justify-between gap-2 flex-col md:flex-row">
             <div class="w-full md:3/5 h-[600px] order-2 md:order-1 justify-center flex flex-col">
                 <div class="flex items-center gap-2">
                     <p class="text-2xl font-bold">LeafMail</p>
-                    <img src="./assets/img/logo.png" alt="" class="w-5 h-5">
+                    <img src="./assets/img/logo.png" alt="logo" class="w-5 h-5">
                 </div>
-                <h2 class="text-3xl md:text-4xl font-bold my-3">Smart. Focused. Email.</h2>
-                <p class="text-xl font-light w-full md:w-[50%]">Fast, cross-platform email designed to filter out the
+                <h2 class="text-3xl lg:text-4xl font-bold my-3">Smart. Focused. Email.</h2>
+                <p class="text-xl font-light w-full lg:w-[50%]">Fast, cross-platform email designed to filter out the
                     noise - so you can focus on what's important.</p>
                 <div class="sm:flex gap-3 flex-col sm:flex-row py-4 items-center">
                     <button onclick="gologin()"
-                        class="py-3 sm:w-32 w-[100%] rounded-lg text-white bg-purple-500 mt-3 font-semibold text-sm  hover:bg-purple-800 transition duration-300">
+                        class="py-3 sm:w-32 w-[100%] rounded-lg bg-purple-500 mt-3 font-semibold text-sm  hover:bg-purple-800 transition duration-300">
                         Login</button>
                     <div>
-                        <button 
-                            class="py-3 sm:w-24 w-[100%] rounded-lg ring-2 text-black ring-gray-200 bg-white mt-3 font-semibold text-sm hover:bg-gray-200  transition duration-300"><a href="register.html">
-                            Sign up</a></button>
+                        <button
+                            class="py-3 sm:w-24 w-[100%] rounded-lg ring-2 text-black ring-gray-200 bg-white mt-3 font-semibold text-sm hover:bg-gray-200  transition duration-300"><a
+                                href="register.html">
+                                Sign up</a></button>
                     </div>
                 </div>
             </div>
-            
+
             <div class=" order-1 md:order-2 flex items-center justify-center">
-                <img src="./assets/img/banner.png" alt="" class="">
+                <img src="./assets/img/banner.png" alt="" class="rotate-0 md:rotate-6">
             </div>
         </div>
-        
+
     </main>
 
 
 
 
-      
+
     <script src="app.js"></script>
 </body>
 

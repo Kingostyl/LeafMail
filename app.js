@@ -26,7 +26,6 @@ function goinstall() {
 }
 
 document.getElementById("icloud").play();
-
 document.getElementById("error").play();
 
 function goapple() {
@@ -149,4 +148,3 @@ function gotrack() {
     "https://chrome.google.com/webstore/detail/email-tracker-for-gmail-m/ndnaehgpjlnokgebbaldlmgkapkpjkkb"
   );
 }
-

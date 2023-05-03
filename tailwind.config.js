@@ -6,6 +6,9 @@ module.exports = {
       animation: {
         blob: "blob 7s infinite",
       },
+      backgroundImage: {
+        'login': "url('/assets/img/bglogin.jpg')"
+      },
       keyframes: {
         blob: {
           "0%": {
