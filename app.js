@@ -10,19 +10,19 @@ function changeblue() {
 }
 
 function gologin() {
-  window.location.href = "./login.html";
+  window.location.href = "login.html";
 }
 
 function goback2() {
-  window.location.href = "./home.html";
+  window.location.href = "home.html";
 }
 
 function gomockup() {
-  window.location.href = "./home.html";
+  window.location.href = "home.html";
 }
 
 function goinstall() {
-  window.location.href = "../app/LeafMail.dmg";
+  window.location.href = "./app/LeafMail.dmg";
 }
 
 document.getElementById("icloud").play();
