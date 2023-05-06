@@ -1,13 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [".//*.{html,js}"],
+  darkMode: "class",
   theme: {
     extend: {
       animation: {
         blob: "blob 7s infinite",
       },
+      colors: {
+        dark: '#0f172a'
+        },
       backgroundImage: {
-        'login': "url('/assets/img/bglogin.jpg')"
+        'login': "url('/assets/img/bglogin.jpg')",
+        '404': "url('/assets/img/treedraw.jpg')"
       },
       keyframes: {
         blob: {
@@ -30,5 +35,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin')
+  ],
 };

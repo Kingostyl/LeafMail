@@ -13,23 +13,23 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="dark:text-white dark:bg-dark">
     <header>
         <nav
-            class="fixed top-0 flex flex-wrap z-50 items-center justify-between md:justify-around w-full py-3 md:py-3 px-4 text-lg text-gray-700 bg-white">
+            class="fixed top-0 flex flex-wrap z-50 items-center justify-between md:justify-around w-full py-3 md:py-3 px-4 text-lg text-gray-700 bg-white dark:bg-dark">
 
             <div class="">
-                <img src="../assets/img/icon.png" alt="" class="h-[48px] w-[48px]  rounded-xl cursor-pointer"
+                <img src="../assets/img/icon.png" alt="" class="h-[48px] w-[48px]  cursor-pointer rounded-xl"
                     onclick="goback2()">
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer md:hidden block"
+            <svg xmlns="http://www.w3.org/2000/svg" id="menu-button" class="h-6 w-6 cursor-pointer dark:text-white md:hidden block"
                 fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
 
             <div class="hidden w-full md:flex md:items-center md:w-auto md:shadow-none" id="menubar">
-                <ul class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0 text-center">
+                <ul class="pt-4 text-base text-gray-700 dark:text-white md:flex md:justify-between md:pt-0 text-center">
                     <li>
                         <a class="md:p-4 py-2 block hover:underline cursor-pointer" href="./team.html">Team</a>
                     </li>
@@ -56,62 +56,62 @@
                 <p class="text-white">Search</p>
             </div>
         </div>
-        <p class="text-center text-sm font-normal text-black/50 mt-3">I'm looking for</p>
+        <p class="text-center text-sm font-normal text-black/50 mt-3 dark:text-white">I'm looking for</p>
         <div class="justify-center flex gap-2 py-8  flex-wrap text-slate-950">
-            <div class="w-72 h-8 bg-[#582b8f]/40 flex gap-2 items-center justify-center">
-                <i class="fa-solid fa-key opacity-20"></i>
+            <div class="w-72 h-8 bg-[#582b8f]/40 dark:bg-[#582b8f] dark:text-white flex gap-2 items-center justify-center">
+                <i class="fa-solid fa-key opacity-20 dark:opacity-80"></i>
                 <p class="">Login, Password and Recovery</p>
             </div>
-            <div class="w-52 h-8 bg-[#582b8f]/40 flex gap-2 items-center justify-center">
-                <i class="fa-solid fa-arrow-up-from-bracket opacity-20"></i>
+            <div class="w-52 h-8 bg-[#582b8f]/40 dark:bg-[#582b8f] dark:text-white flex gap-2 items-center justify-center">
+                <i class="fa-solid fa-arrow-up-from-bracket opacity-20 dark:opacity-80"></i>
                 <p class="">Import And Export</p>
             </div>
-            <div class="w-52 h-8 bg-[#582b8f]/40 flex gap-2 items-center justify-center">
-                <i class="fa-brands fa-intercom opacity-20"></i>
+            <div class="w-52 h-8 bg-[#582b8f]/40 dark:bg-[#582b8f] dark:text-white flex gap-2 items-center justify-center">
+                <i class="fa-brands fa-intercom opacity-20 dark:opacity-80"></i>
                 <p class="">Mailbox Customization</p>
             </div>
         </div>
     </div>
 
     <div class="py-14">
-        <div class="flex flex-col mb-5 gap-5 px-20">
+        <div class="flex flex-col mb-5 gap-5 px-10 md:px-20">
             <h1 class="text-5xl font-normal ">Start using LeafMail</h1>
             <div class="w-11 h-2 bg-[#582b8f] rounded-xl "></div>
             <p class="text-xl font-light ">We can help you with every step of using Mail's services.</p>
         </div>
 
-        <div class="flex justify-center flex-wrap gap-8 py-5">
-            <button class="w-[378px] h-[189px] bg-white rounded-xl border-2 border-[#582b8f]/30 ">
+        <div class="flex justify-center flex-wrap gap-8 py-5 px-3">
+            <button class="w-[378px] h-[189px] bg-white dark:bg-slate-800 dark:border-white rounded-xl border-2 border-[#582b8f]/30 ">
                 <div class="flex flex-col items-center  gap-3">
                     <img src="../assets/img/undraw_outer_space_re_u9vd.svg" alt="" class="w-[160px] h-[98px]">
                     <p>Get Started</p>
                 </div>
             </button>
-            <button class="w-[378px] h-[189px] bg-white rounded-xl border-2 border-[#582b8f]/30 ">
+            <button class="w-[378px] h-[189px] bg-white dark:bg-slate-800 dark:border-white  rounded-xl border-2 border-[#582b8f]/30 ">
                 <div class="flex flex-col items-center  gap-3">
                     <img src="../assets/img/undraw_switches_1js3.svg" alt="" class="w-[160px] h-[98px]">
                     <p>Switching LeafMail</p>
                 </div>
             </button>
-            <button class="w-[378px] h-[189px] bg-white rounded-xl border-2 border-[#582b8f]/30 ">
+            <button class="w-[378px] h-[189px] bg-white dark:bg-slate-800 dark:border-white  rounded-xl border-2 border-[#582b8f]/30 ">
                 <div class="flex flex-col items-center  gap-3">
                     <img src="../assets/img/undraw_settings_re_b08x.svg" alt="" class="w-[160px] h-[98px]">
                     <p>Account setting</p>
                 </div>
             </button>
-            <button class="w-[378px] h-[189px] bg-white rounded-xl border-2 border-[#582b8f]/30 ">
+            <button class="w-[378px] h-[189px] bg-white dark:bg-slate-800 dark:border-white  rounded-xl border-2 border-[#582b8f]/30 ">
                 <div class="flex flex-col items-center  gap-3">
                     <img src="../assets/img/undraw_finance_re_gnv2.svg" class="w-[160px] h-[98px]">
                     <p>For Buisness</p>
                 </div>
             </button>
-            <button class="w-[378px] h-[189px] bg-white rounded-xl border-2 border-[#582b8f]/30 ">
+            <button class="w-[378px] h-[189px] bg-white dark:bg-slate-800 dark:border-white  rounded-xl border-2 border-[#582b8f]/30 ">
                 <div class="flex flex-col items-center  gap-3">
                     <img src="../assets/img/undraw_payments_re_77x0.svg" alt="" class="w-[160px] h-[98px]">
                     <p>Plans and Payment</p>
                 </div>
             </button>
-            <button class="w-[378px] h-[189px] bg-white rounded-xl border-2 border-[#582b8f]/30 ">
+            <button class="w-[378px] h-[189px] bg-white dark:bg-slate-800 dark:border-white  rounded-xl border-2 border-[#582b8f]/30 ">
                 <div class="flex flex-col items-center  gap-3">
                     <img src="../assets/img/undraw_security_re_a2rk.svg" alt="" class="w-[160px] h-[98px]">
                     <p>Security</p>
@@ -120,9 +120,23 @@
         </div>
     </div>
 
+    <div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
+        <button id="theme-toggle" type="button"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+            <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+            </svg>
+            <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                    fill-rule="evenodd" clip-rule="evenodd"></path>
+            </svg>
+        </button>
+    </div>
 
-
-    <footer class=" bg-violet-600 text-white">
+    <footer class=" bg-violet-600 text-white dark:bg-slate-800">
         <div class="max-w-2xl mx-auto text-white py-10">
             <div class="text-center">
                 <h3 class="text-3xl mb-3"> Download LeafMail On you device </h3>
